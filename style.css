@@ -1,0 +1,121 @@
+html,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #4e334e;
+}
+
+.container {
+  text-align: center;
+  background: #ebe6c7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  margin: 20px;
+}
+
+.password-container {
+  position: relative;
+}
+
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button#togglePassword,
+button#clearPassword,
+button#copyPassword,
+button#clearGeneratedPassword,
+button#generatePassword {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button#togglePassword:hover,
+button#clearPassword:hover,
+button#copyPassword:hover,
+button#clearGeneratedPassword:hover,
+button#generatePassword:hover {
+  background-color: #45a049;
+}
+
+#strength {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.weak {
+  background-color: #b11c22;
+}
+
+.medium {
+  background-color: #f2b717;
+}
+
+.strong {
+  background-color: #175844;
+}
+
+.password-generator {
+  text-align: center;
+  background: #ebe6c7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  margin: 20px;
+}
+
+.generator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70px;
+  box-sizing: border-box;
+}
+
+.generated-password {
+  text-align: center;
+  background: #ebe6c7;
+  padding: 20px;
+}
+
+input[type="text"]#generatedPassword {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
